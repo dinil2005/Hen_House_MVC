@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashViewAnchorPane" prefHeight="704.0" prefWidth="1146.0" stylesheets="@../Style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thehenhouse.Controller.DashViewController">
+   <children>
+      <Label fx:id="employeesViewLbl" layoutX="405.0" layoutY="129.0" opacity="0.71" prefHeight="109.0" prefWidth="336.0" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <Label fx:id="custViewLbl" layoutX="37.0" layoutY="129.0" prefHeight="109.0" prefWidth="336.0" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemViewLbl" layoutX="769.0" layoutY="129.0" opacity="0.81" prefHeight="109.0" prefWidth="336.0" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="545.0" layoutY="200.0" text="Total Employees">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="752.0" fitWidth="1155.0" layoutX="-10.0" layoutY="-38.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/unnamed.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="custNumLbl" layoutX="224.0" layoutY="157.0" prefHeight="53.0" prefWidth="58.0" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font></Label>
+      <Label fx:id="timeViewLbl" layoutX="901.0" layoutY="477.0" opacity="0.67" prefHeight="200.0" prefWidth="212.0" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="employeesCountLbl" layoutX="586.0" layoutY="157.0" prefHeight="53.0" prefWidth="58.0" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="78.0" fitWidth="76.0" layoutX="80.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="76.0" layoutX="449.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/employee.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="76.0" layoutX="817.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/chikenBox.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="188.0" layoutY="200.0" text="Total Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemCountLbl" layoutX="962.0" layoutY="157.0" prefHeight="53.0" prefWidth="58.0" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="943.0" layoutY="200.0" prefHeight="0.0" prefWidth="96.0" text="Total Items">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="itemsBarChart" layoutX="37.0" layoutY="283.0" opacity="0.74" prefHeight="400.0" prefWidth="840.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <ImageView fitHeight="76.0" fitWidth="73.0" layoutX="1057.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/whiteColueHenLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="440.0" layoutY="24.0" prefHeight="53.0" prefWidth="222.0" text="DASH BORD" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

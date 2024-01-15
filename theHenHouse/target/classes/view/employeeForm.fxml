@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeeAnchorPane" prefHeight="704.0" prefWidth="1146.0" stylesheets="@../Style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thehenhouse.Controller.EmployeeFormController">
+   <children>
+      <ImageView fitHeight="738.0" fitWidth="1158.0" layoutX="-2.0" layoutY="-34.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/unnamed.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="570.0" fitWidth="433.0" layoutX="13.0" layoutY="110.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/employeeUnder.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="44.0" layoutX="144.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/employeeWhiteColurLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="196.0" layoutY="96.0" text="Employees" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="611.0" layoutX="14.0" layoutY="69.0" opacity="0.17" stroke="WHITE" strokeType="INSIDE" width="433.0" />
+      <AnchorPane layoutX="25.0" layoutY="255.0" prefHeight="240.0" prefWidth="413.0">
+         <children>
+            <Label layoutX="31.0" layoutY="34.0" text="Employee  ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="77.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="119.0" text="Contact" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="157.0" text="Address" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="employeid" layoutX="218.0" layoutY="35.0" onKeyReleased="#employeeIdReleseOnAction" style="-fx-text-fill: WHITE;" stylesheets="@../Style/textFields.css" unFocusColor="WHITE" />
+            <JFXTextField fx:id="empName" layoutX="218.0" layoutY="77.0" onKeyReleased="#nameReleseKeyOnAction" style="-fx-text-fill: WHITE;" stylesheets="@../Style/textFields.css" unFocusColor="WHITE" />
+            <JFXTextField fx:id="empContact" layoutX="216.0" layoutY="119.0" onKeyReleased="#contactKeyReleseOnAction" style="-fx-text-fill: WHITE;" stylesheets="@../Style/textFields.css" unFocusColor="WHITE" />
+            <JFXTextField fx:id="empAdresss" layoutX="217.0" layoutY="160.0" onKeyReleased="#adressKeyReleseOnAction" style="-fx-text-fill: WHITE;" stylesheets="@../Style/textFields.css" unFocusColor="WHITE" />
+            <Label layoutX="34.0" layoutY="193.0" text="Employee Salary" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="employeeSalaryLbl" layoutX="245.0" layoutY="193.0" prefHeight="36.0" prefWidth="126.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="deletBtn" layoutX="334.0" layoutY="631.0" onAction="#deletOnAction" opacity="0.54" prefHeight="39.0" prefWidth="106.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/delet.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="serchBtn" layoutX="296.0" layoutY="510.0" onAction="#serchOnAction" opacity="0.54" prefHeight="29.0" prefWidth="115.0" text="Search">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="addSupplierBtn" layoutX="20.0" layoutY="634.0" onAction="#addOnAction" opacity="0.54" prefHeight="36.0" prefWidth="183.0" text="ADD Employee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/addLogo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="updateBtn" layoutX="210.0" layoutY="633.0" onAction="#updateOnAction" opacity="0.54" prefHeight="39.0" prefWidth="115.0" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TableView fx:id="employeeTbl" layoutX="452.0" layoutY="110.0" prefHeight="499.0" prefWidth="678.0" stylesheets="@../Style/tbl.css">
+        <columns>
+          <TableColumn fx:id="coldId" prefWidth="85.0" text=" ID" />
+            <TableColumn fx:id="colName" prefWidth="130.0" text="Name" />
+            <TableColumn fx:id="colContact" prefWidth="137.0" text="Contact" />
+            <TableColumn fx:id="colAdress" prefWidth="196.0" text="Adress" />
+            <TableColumn fx:id="colSalry" prefWidth="129.0" text="Salary" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="attendanceBtn" contentDisplay="TOP" layoutX="947.0" layoutY="610.0" onAction="#atendaneOnAction" opacity="0.78" prefHeight="86.0" prefWidth="183.0" text="Attendance Mark" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/attendanceLogo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="clarbtn" layoutX="296.0" layoutY="557.0" onAction="#clearOnAction" opacity="0.54" prefHeight="29.0" prefWidth="115.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/eraser.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="76.0" fitWidth="73.0" layoutX="1059.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/whiteColueHenLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="510.0" layoutY="24.0" prefHeight="53.0" prefWidth="222.0" text="EMPLOYEES" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

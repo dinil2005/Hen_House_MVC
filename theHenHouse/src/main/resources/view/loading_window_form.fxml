@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="435.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thehenhouse.Controller.LoadingWindowFormController">
+   <children>
+      <ImageView fx:id="lodinAnc" fitHeight="435.0" fitWidth="609.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/R.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="435.0" opacity="0.62" stroke="BLACK" strokeType="INSIDE" width="580.0" />
+      <Label layoutX="196.0" layoutY="33.0" text="WELCOME... " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="219.0" fitWidth="217.0" layoutX="363.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/OIP__10_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="435.0" opacity="0.28" stroke="BLACK" strokeType="INSIDE" width="580.0" />
+      <Label layoutX="60.0" layoutY="186.0" prefHeight="64.0" prefWidth="490.0" text="HEN HOUSE MANAGEMENET SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="prgBar" layoutX="10.0" layoutY="266.0" opacity="0.55" prefHeight="23.0" prefWidth="561.0" progress="0.0" stylesheets="@../Style/style.css" />
+      <Label layoutX="242.0" layoutY="306.0" prefHeight="32.0" prefWidth="126.0" text="LODING ..." textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

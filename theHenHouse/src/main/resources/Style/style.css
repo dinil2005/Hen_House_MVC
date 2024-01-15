@@ -1,0 +1,79 @@
+
+#{
+    background: linear-gradient(to bottom, #99ccff 15%, #99ffcc 100%);
+  //  -fx-background-color: linear-gradient(to bottom left,#34e7e4, rgb(11, 232, 129));
+   // -fx-background-color: linear-gradient(to bottom left,#33ccff 0%, #ff99cc 100%);
+  //-fx-background-color:#003153;
+  //  -fx-background-color: #0C2D48;
+
+
+  //-fx-background-radius: 0;
+
+}
+
+#newDash{
+    -fx-background-color: black;
+}
+
+
+#dddd{
+    -fx-background-color: linear-gradient(to bottom, #003366 0%, #33ccff 100%);
+}
+#cd{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+
+}
+
+
+#itemAnchorPane,#qrAnchor,#AttendanceAnchorPane,#orderAnchorPane,#supplierAnchorPane,#employeeAnchorPane,#customeAnchorPane,#recivedItemAnchorPane{
+    -fx-background-color: #232b2b;
+
+}
+#dashViewAnchorPane,#lodinAnc{
+    -fx-background-color: #232b2b;
+}
+#prgBar{
+    accent-color: coral;
+}
+#root {
+    -fx-background-color: linear-gradient(to bottom, #003366 0%, #0066cc 67%);
+}
+#email_txtField,#password_txtField{
+-fx-prompt-text-fill: WHITE;
+}
+#loginBtn{
+    -fx-opacity: 100;
+}
+#updateBtn,#addItemBtn,#clarbtn,#reportBtn,#deletBtn,#addCartBtn,#conformBtn,#saveBtn,#serchBtn,#addSupplierBtn{
+    -fx-background-color: linear-gradient(to right, #33ccff 0%, #99ccff 100%);
+
+    -fx-background-radius: 10;
+}
+#custIdTxtField,#custNameTxtField,#descriptionComboBox,#qtyTxt{
+    -fx-background-radius: 17;
+}
+#customeraddpp{
+    background: linear-gradient(to bottom, #000000 15%, #ffffff 100%);
+}
+
+#custViewLbl,#timeViewLbl{
+
+   -fx-background-radius: 20;
+    //-fx-background-color:linear-gradient(to left, #669999 0%, #006666 100%);
+    -fx-background-color:linear-gradient(to left, #ccffff 0%, #009999 100%);
+
+}
+#employeesViewLbl{
+    -fx-background-radius: 20;
+    -fx-background-color: linear-gradient(to left, #ccffff 0%, #0066ff 100%);
+}
+#itemViewLbl{
+    -fx-background-radius: 20;
+    -fx-background-color:linear-gradient(to left, #ffffff 0%, #ff5050 93%);
+}
+
+
+
+#bluePic{
+    -fx-background-radius: 20;
+}

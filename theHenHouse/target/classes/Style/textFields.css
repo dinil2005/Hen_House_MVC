@@ -1,0 +1,15 @@
+#customerIdTxtField{
+    -fx-text-fill: WHITE;
+    -fx-prompt-text-fill: WHITE;
+}
+
+#email_txtField,#password_txtField{
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+#customerIdTxtField,#custNameTxtField,#custAdressTxtField,#custContacTxtField,#employeid,#empName,#empContact,#empAdresss,#itemIdTxtFiled,#descriptionTxtField,#unitPriceTxtField,#qtyOnHandTxtField,#qtyTxtField,#SupplierId,#supplierName,#supplierContac{
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}

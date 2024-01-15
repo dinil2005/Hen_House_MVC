@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AttendanceAnchorPane" prefHeight="477.0" prefWidth="696.0" stylesheets="@../Style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thehenhouse.Controller.AttendanceFormController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="1121.0" layoutX="-358.0" layoutY="-58.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/R (1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="85.0" layoutY="148.0" text="Employee  ID" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="231.0" text="Date " textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="321.0" text="Select Attendance Type" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="employeeIdCmboBox" focusColor="#0040ff" layoutX="371.0" layoutY="150.0" prefHeight="31.0" prefWidth="277.0" stylesheets="@../Style/comboBox.css" />
+      <Label fx:id="dateLbl" layoutX="295.0" layoutY="231.0" prefHeight="38.0" prefWidth="277.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="ateendanceTypeCombox" focusColor="#0040ff" layoutX="371.0" layoutY="325.0" prefHeight="31.0" prefWidth="277.0" stylesheets="@../Style/comboBox.css" />
+      <JFXButton layoutX="449.0" layoutY="378.0" onAction="#conformOnAction" text="Conform" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/conformWhiteColurLogo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="117.0" layoutY="27.0" prefHeight="53.0" prefWidth="508.0" text="EMPLOYEES ATTENDANCE" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

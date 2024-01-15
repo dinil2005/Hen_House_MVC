@@ -1,0 +1,12 @@
+#tblCustomer,#employeeTbl,#supplierTbl,#recivedItemTble,#orderTable,#recivedItemTble,#itemTable{
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+#tblCustomer {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tblCustomer{
+    text-align: center;
+}

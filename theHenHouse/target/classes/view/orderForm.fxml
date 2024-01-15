@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="orderAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1146.0" stylesheets="@../Style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thehenhouse.Controller.OrderFormController">
+   <children>
+      <ImageView fitHeight="740.0" fitWidth="1146.0" layoutY="-32.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/unnamed.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="73.0" layoutX="1051.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/whiteColueHenLogo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="orderTable" layoutX="20.0" layoutY="432.0" prefHeight="265.0" prefWidth="923.0" stylesheets="@../Style/tbl.css">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="133.0" text="Item Code" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="Qty" />
+            <TableColumn fx:id="colDescription" prefWidth="255.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" minWidth="0.0" prefWidth="154.0" text="Unit Price" />
+            <TableColumn fx:id="colQty" minWidth="0.0" prefWidth="107.0" text="Qty" />
+            <TableColumn fx:id="colTotal" minWidth="0.0" prefWidth="141.0" text="Total" />
+            <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="132.0" text="Action" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="503.0" fitWidth="473.0" layoutX="21.0" layoutY="105.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ordersUnderPic.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="23.0" layoutY="138.0" prefHeight="242.0" prefWidth="484.0">
+         <children>
+            <Label layoutX="17.0" layoutY="23.0" text="Order ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="65.0" text="Order Date" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="109.0" text="Customer ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="157.0" text="Customer Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderIdLbl" layoutX="239.0" layoutY="23.0" prefHeight="40.0" prefWidth="136.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label fx:id="orderDateLbl" layoutX="241.0" layoutY="66.0" prefHeight="40.0" prefWidth="179.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label fx:id="customerNameLbl" layoutX="244.0" layoutY="157.0" prefHeight="40.0" prefWidth="129.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <JFXComboBox fx:id="customerIdComboBox" focusColor="WHITE" layoutX="237.0" layoutY="104.0" onAction="#customerIdComboBoxOnAction" prefHeight="31.0" prefWidth="172.0" stylesheets="@../Style/comboBox.css" unFocusColor="WHITE" visibleRowCount="15" />
+            <JFXButton fx:id="customerShortcutBtn" contentDisplay="GRAPHIC_ONLY" layoutX="401.0" layoutY="110.0" prefHeight="39.0" prefWidth="33.0" text="Button">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/addWhiteColurLogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="315.0" fitWidth="636.0" layoutX="512.0" layoutY="103.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/chikenPicUnder.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="505.0" layoutY="98.0" prefHeight="293.0" prefWidth="623.0">
+         <children>
+            <Label layoutX="26.0" layoutY="44.0" text="Select Items" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="97.0" text="Item Code" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="146.0" text="Unit Price" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="245.0" text="Qty" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="itemIdDescriptionComBox" focusColor="WHITE" layoutX="194.0" layoutY="47.0" onAction="#itemDescriptionBoxOnAction" prefHeight="31.0" prefWidth="241.0" stylesheets="@../Style/comboBox.css" unFocusColor="WHITE" visibleRowCount="15" />
+            <Label layoutX="26.0" layoutY="195.0" text="Qty On Hand" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="unitPriceLbl" layoutX="213.0" layoutY="139.0" prefHeight="40.0" prefWidth="129.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label fx:id="itemCodeLbl" layoutX="212.0" layoutY="94.0" prefHeight="40.0" prefWidth="129.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <Label fx:id="qtyOnHandLbl" layoutX="215.0" layoutY="193.0" prefHeight="40.0" prefWidth="129.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <JFXTextField fx:id="qtyTxtField" focusColor="#0040ff" layoutX="95.0" layoutY="251.0" onKeyReleased="#qtyReleseOnAction" stylesheets="@../Style/textFields.css" unFocusColor="WHITE" />
+            <JFXButton fx:id="addCartBtn" layoutX="471.0" layoutY="255.0" onAction="#addCartOnAction" opacity="0.54" text="ADD Cart" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="conformBtn" layoutX="961.0" layoutY="639.0" onAction="#conformOnAction" prefHeight="54.0" prefWidth="172.0" text="Conform ">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/conform.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <Group layoutX="962.0" layoutY="508.0">
+         <children>
+            <Label text="Order Total" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalLbl" layoutX="54.0" layoutY="32.0" prefHeight="50.0" prefWidth="114.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalLbl1" layoutX="14.0" layoutY="32.0" prefHeight="50.0" prefWidth="34.0" text="RS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <JFXButton fx:id="reportBtn" layoutX="952.0" layoutY="446.0" onAction="#reportOnAction" prefHeight="54.0" prefWidth="172.0" text="Report">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/conform.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="qr" layoutX="1067.0" layoutY="590.0" onAction="#qrOnAction" text="Qr" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/qrLogo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="507.0" layoutY="25.0" prefHeight="53.0" prefWidth="222.0" text="ORDER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

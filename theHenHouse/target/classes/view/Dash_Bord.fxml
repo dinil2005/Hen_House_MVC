@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newDash" prefHeight="808.0" prefWidth="1542.0" stylesheets="@../Style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thehenhouse.Controller.Dash_BordController">
+   <children>
+      <ImageView fitHeight="1051.0" fitWidth="1846.0" layoutX="-132.0" layoutY="-242.0" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/accounting.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="dddd" layoutX="13.0" layoutY="90.0" prefHeight="704.0" prefWidth="336.0" stylesheets="@../Style/style.css">
+         <children>
+            <JFXButton fx:id="customerBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="19.0" layoutY="95.0" onAction="#customerOnAction" prefHeight="99.0" prefWidth="162.0" text="Customer">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="itemsBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="164.0" layoutY="154.0" onAction="#itemBtnOnAction" prefHeight="90.0" prefWidth="109.0" text="Items">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/chikenBox.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="orderBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="211.0" layoutY="253.0" onAction="#orderOnAction" prefHeight="99.0" prefWidth="124.0" text="Orders">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/order.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="supplierBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="192.0" layoutY="352.0" onAction="#suppliersOnAction" prefHeight="99.0" prefWidth="162.0" text="Suppliers">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/supplier.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="employeesBtn" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="142.0" layoutY="453.0" onAction="#employeeBtnOnAction" prefHeight="99.0" prefWidth="173.0" text="Employees">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/employee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="recivedItemsBtn" alignment="CENTER" contentDisplay="TOP" layoutX="-19.0" layoutY="502.0" onAction="#recivedBtnOnAction" prefHeight="99.0" prefWidth="236.0" text="Receved Items">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-courier-lorry-90.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="386.0" fitWidth="226.0" layoutX="4.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/OIP__9_-removebg-d.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="dashViewBtn" contentDisplay="GRAPHIC_ONLY" layoutY="251.0" onAction="#dashOnAction" prefHeight="211.0" prefWidth="162.0" />
+            <ImageView fitHeight="59.0" fitWidth="97.0" layoutX="16.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/dashmark.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="root_second" layoutX="382.0" layoutY="90.0" prefHeight="704.0" prefWidth="1146.0">
+         <children>
+            <AnchorPane fx:id="cu_anchorPane" layoutX="31.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane fx:id="ite_anchroPane" layoutX="320.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane fx:id="sup_AnchorPane" layoutX="616.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
+         </children></AnchorPane>
+      <Label fx:id="datelbl" layoutX="1295.0" layoutY="7.0" prefHeight="29.0" prefWidth="226.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLbl" layoutX="1295.0" layoutY="38.0" prefHeight="46.0" prefWidth="226.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="datelbl1" layoutX="751.0" layoutY="30.0" prefHeight="58.0" prefWidth="269.0" text="HEN HOUSE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
